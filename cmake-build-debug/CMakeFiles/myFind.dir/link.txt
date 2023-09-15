@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/myFind.dir/main.cpp.o -o myFind 

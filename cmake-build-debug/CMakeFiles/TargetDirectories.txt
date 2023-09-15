@@ -1,0 +1,3 @@
+/mnt/c/Users/User/Documents/GitHub/Grundlagen verteilter Systeme Labor/myFind/cmake-build-debug/CMakeFiles/myFind.dir
+/mnt/c/Users/User/Documents/GitHub/Grundlagen verteilter Systeme Labor/myFind/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/User/Documents/GitHub/Grundlagen verteilter Systeme Labor/myFind/cmake-build-debug/CMakeFiles/rebuild_cache.dir
