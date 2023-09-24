@@ -47,7 +47,7 @@ void searchFile(bool recursive, bool caseInsensitive, string path, string filena
         }
         else
         {
-            // Groß- und Kleinschreibung beachten
+            // Groß- und Kleinschreibung nicht beachten
             if (caseInsensitive)
             {
                 if (caseInsensitiveMatch(currentFile, filename))
@@ -150,7 +150,7 @@ int main(int argc, char *argv[])
             exit(EXIT_FAILURE);
         }
     }
-    // Warte bis alle Kinderprozesse beendet sind
+    // Warte bis alle Kinderprozesse beendet sind, verhindert Zombieprozesse
     while (wait(NULL) > 0);
 
     return 0;
