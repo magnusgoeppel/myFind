@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
                 recursive = true;
                 break;
 
-            // Groß- und Kleinschreibung beachten
+            // Groß- und Kleinschreibung nicht beachten
             case 'i':
                 caseInsensitive = true;
                 break;
@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
     }
 
     // Für alle filenames im Vector
-    for (int i = 0; i < filenames.size(); i++)
+    for (int i = 0; i < filenames.size(); ++i)
     {
         // Erstelle einen Kindprozess
         pid_t pid = fork();
