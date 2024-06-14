@@ -1,37 +1,41 @@
-# myfind
+# myFind
 
-Das `myfind` Programm ist ein benutzerdefiniertes Kommandozeilentool, das zum Suchen von Dateien innerhalb eines bestimmten Verzeichnisses und optional in dessen Unterverzeichnissen verwendet wird. Es unterstützt die Suche nach einem oder mehreren Dateinamen und bietet die Möglichkeit, die Suche unabhängig von der Groß- und Kleinschreibung durchzuführen sowie rekursiv in Unterverzeichnissen zu suchen.
+The `myfind` program is a custom command-line tool designed for searching files within a specified directory and optionally in its subdirectories. It supports searching for one or more filenames and offers the ability to perform case-insensitive searches as well as recursive searches in subdirectories.
 
-## Funktionen
+## Features
 
-- Suche nach einem oder mehreren Dateinamen in einem spezifizierten Verzeichnis.
-- Optionale rekursive Suche in Unterverzeichnissen.
-- Optionale Suche unabhängig von der Groß- und Kleinschreibung.
+- Search for one or more filenames in a specified directory.
+- Optional recursive search in subdirectories.
+- Optional case-insensitive search.
 
-## Abhängigkeiten
+## Dependencies
 
-Das Programm nutzt Standardbibliotheken von C++ und erfordert keine externen Abhängigkeiten. Es ist kompatibel mit Unix-basierten Systemen aufgrund der Verwendung von systemnahen Aufrufen wie `fork()`, `opendir()`, `readdir()` und `closedir()`.
+The program uses standard C++ libraries and requires no external dependencies. It is compatible with Unix-based systems due to the use of system calls such as `fork()`, `opendir()`, `readdir()`, and `closedir()`.
 
-## Kompilierung
+## Compilation
 
-Zum Kompilieren des Programms navigieren Sie in das Verzeichnis, in dem sich `main.cpp` befindet, und führen Sie den folgenden Befehl aus:
+To compile the program, navigate to the directory containing `main.cpp` and execute the following command:
+
 ```bash
 g++ -o myfind main.cpp
 ```
 
-Dies kompiliert den Quellcode und erzeugt eine ausführbare Datei namens `myfind`.
+This compiles the source code and generates an executable file named `myfind`.
 
-## Ausführung
+## Execution
 
-Um das Programm auszuführen, verwenden Sie die folgende Syntax:
+To run the program, use the following syntax:
+
 ```bash
 ./myfind [-R] [-i] searchpath filename1 [filename2] … [filenameN]
 ```
 
-Optionen:
-- `-R`: Aktiviert den rekursiven Modus, um in Unterverzeichnissen zu suchen.
-- `-i`: Führt eine Groß-/Kleinschreibung-unabhängige Suche durch.
+### Options:
 
-Argumente:
-- `searchpath`: Der Pfad, in dem nach den Dateien gesucht werden soll.
-- `filename1 [filename2] … [filenameN]`: Die Namen der Dateien, nach denen gesucht werden soll.
+- `-R`: Enables recursive mode to search in subdirectories.
+- `-i`: Performs a case-insensitive search.
+
+### Arguments:
+
+- `searchpath`: The path where the files should be searched.
+- `filename1 [filename2] … [filenameN]`: The names of the files to search for.
